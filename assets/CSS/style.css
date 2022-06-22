@@ -105,3 +105,10 @@ body{
 #section4{
     height: 100vh;
 }
+#login-card{
+    height: 50vh;
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    position: relative;
+}
