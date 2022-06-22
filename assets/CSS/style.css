@@ -75,7 +75,7 @@ body{
 }
 #myProfiles{
     position: relative;
-    top: 6rem;
+    top: 4.5rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -101,4 +101,7 @@ body{
     position: relative;
     bottom: 0.5rem;
     margin-left: 2rem;
+}
+#section4{
+    height: 100vh;
 }
