@@ -107,8 +107,16 @@ body{
 }
 #login-card{
     height: 50vh;
-    width: 50%;
+    width: 30%;
     margin: auto;
     background-color: white;
     position: relative;
+    top: 8rem;
+    box-shadow: 5px 5px blue;
+}
+#login-card h1{
+    margin-left: 2rem;
+}
+#login-form{
+    margin: 2rem;
 }
