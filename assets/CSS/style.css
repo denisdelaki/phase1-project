@@ -32,6 +32,10 @@ body{
 #section2{
     height: 200vh;
 }
-#home-page{
-    animation: both;
+#button{
+    position: relative;
+    top: 10rem;
+    color: white;
+    background-color: blue;
+    font-size: 25px;
 }
