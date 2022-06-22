@@ -39,3 +39,17 @@ body{
     background-color: blue;
     font-size: 25px;
 }
+#mechanic-form{
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+    position: relative;
+    top: 10rem;
+    left: 30%;
+
+}
+#form{
+    border: 1px solid black;
+    margin: 2rem;
+    font-size: 20px;
+}
