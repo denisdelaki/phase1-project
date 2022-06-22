@@ -13,3 +13,18 @@ const contactName = document.getElementById('contactName')
 const contactEmail = document.getElementById('contactEmail')
 const message = document.getElementById('contactTextArea')
 const messageButton=document.getElementById('messageUs')
+ // render the profile to the profile section  
+
+ //fetch the data from the server
+function getMechanicData() {
+    fetch("http://localhost:3000/mechanics/")
+      .then((res) => res.json())
+      .then((mechanics) =>
+        mechanics.forEach((mechanic) => {
+          renderMechanicData(mechanic);
+        })
+      );
+}
+
+ //display the data on  on the DOM
+
