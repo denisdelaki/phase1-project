@@ -117,6 +117,23 @@ body{
 #login-card h1{
     margin-left: 2rem;
 }
+#login-card button{
+    color: white;
+    background-color: blue;
+}
+#login-card button:hover{
+    cursor: pointer;
+    color: blue;
+    background-color: black;
+}
 #login-form{
     margin: 2rem;
+}
+#contact{
+    height: 50vh;
+    width: 30%;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    box-shadow: 5px 5px blue;
 }
