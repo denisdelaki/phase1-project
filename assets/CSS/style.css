@@ -135,5 +135,6 @@ body{
     margin: auto;
     background-color: white;
     position: relative;
+    bottom: 4rem;
     box-shadow: 5px 5px blue;
 }
