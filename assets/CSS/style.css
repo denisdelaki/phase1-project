@@ -55,7 +55,6 @@ body{
 }
 #mechanic-form h1{
     text-align: center;
-
 }
 #form{
      margin: 2rem;
@@ -68,4 +67,19 @@ body{
     position: absolute;
     bottom: 4rem;
     left: 10rem;
+}
+#section3{
+    height: 100vh;
+}
+#myProfiles{
+    position: relative;
+    top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile{
+    height: 40vh;
+    width: 22%;
+    background-color: white;
+    margin: 0.5rem;
 }
