@@ -27,4 +27,7 @@ function getMechanicData() {
 }
 
  //display the data on  on the DOM
-
+ function displayMechanicData() {
+     getMechanicData()
+ }
+displayMechanicData()
