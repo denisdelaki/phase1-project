@@ -76,10 +76,22 @@ body{
     top: 6rem;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+#myProfiles p{
+   margin-left: 2rem;
+    color: black;
 }
 .profile{
-    height: 40vh;
+    height: 45vh;
     width: 22%;
     background-color: white;
     margin: 0.5rem;
+}
+.profile-image img{
+    height: 20vh;
+    position: relative;
+    left: 4rem;
+    top: 0.5rem;
+    border-radius: 400px;
 }
