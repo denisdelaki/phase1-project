@@ -5,7 +5,7 @@ body{
     background-position: center center;   
 }
 #section1{
-    height: 100vh;
+    height: 75vh;
 }
 #heading{
     position: fixed;
@@ -67,8 +67,15 @@ body{
     color: white;
     background-color: blue;
     position: absolute;
-    bottom: 4rem;
-    left: 10rem;
+    bottom: 8rem;
+    left: 6rem;
+}
+#submission:hover{
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+    box-shadow: 4px 4px black;
+    font-size: large;
 }
 #section3{
     height: 100vh;
@@ -137,4 +144,7 @@ body{
     position: relative;
     bottom: 4rem;
     box-shadow: 5px 5px blue;
+}
+#contact-form{
+    margin-left: 1.5rem;
 }
