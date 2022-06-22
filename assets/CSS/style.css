@@ -62,3 +62,10 @@ body{
     font-size: 20px;
     
 }
+#submission{
+    color: white;
+    background-color: blue;
+    position: absolute;
+    bottom: 4rem;
+    left: 10rem;
+}
