@@ -66,7 +66,7 @@ function renderMechanicData(mechanic) {
 }
  //fetch the data from the server
 function getMechanicData() {
-    fetch("http://localhost:3000/mechanics/")
+    fetch(" http://localhost:3000/mechanics")
       .then((res) => res.json())
       .then((mechanics) =>
         mechanics.forEach((mechanic) => {
@@ -87,6 +87,19 @@ function handleSubmit(e) {
     }
     renderMechanicData(myMechanic)
     createProfile(myMechanic)
+}
+//post the data when the user create a profile
+function createProfile(myMechanic) {
+  fetch(" http://localhost:3000/mechanics", {
+    method: 'POST',
+    headers: {
+      'content-Type':'application/json'
+    },
+    body: JSON.stringify(myMechanic)
+  })
+    .then(res => res.json())
+  .then(myMechanic=>console.log(myMechanic))
+  
 }
 
  //display the data on  on the DOM
