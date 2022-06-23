@@ -1,4 +1,7 @@
 //section 2
+const profileContainer = document.getElementById('mechanic-form')
+const profiles=document.getElementById('myProfiles')
+const mechProfile=document.getElementsByClassName('profile')
 const profileForm = document.getElementById('form')
 const profileName = document.getElementById('name')
 const profileLocation = document.getElementById('location')
@@ -14,7 +17,11 @@ const contactEmail = document.getElementById('contactEmail')
 const message = document.getElementById('contactTextArea')
 const messageButton=document.getElementById('messageUs')
  // render the profile to the profile section  
-
+function renderMechanicData() {
+    let newDiv = document.createElement('div')
+    newDiv.className = 'profile'
+    profiles.appendChild(newDiv)
+}
  //fetch the data from the server
 function getMechanicData() {
     fetch("http://localhost:3000/mechanics/")
