@@ -85,7 +85,7 @@ body{
     top: 4.5rem;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column-reverse;
+    flex-direction: row;
 }
 #myProfiles p{
    margin-left: 2rem;
@@ -104,10 +104,22 @@ body{
     top: 0.5rem;
     border-radius: 400px;
 }
-.review-contact{
+#review-mechanic{
     position: relative;
-    bottom: 0.5rem;
+    
+}
+.reviewInput{
     margin-left: 2rem;
+    position: relative;
+    top: 0.8rem;
+   right: 1rem;
+}
+#review-button{
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    position: relative;
+    top: 0.8rem;
 }
 #section4{
     height: 100vh;

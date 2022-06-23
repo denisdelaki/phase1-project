@@ -28,7 +28,6 @@
     </div>
     </section>
     <section id="section2">
-        <div></div>
         <div id="mechanic-form">
              <h1><span class="span">My👨‍🔧 </span>Mechanic</h1>
             <form id="form" action="" method="get">
@@ -49,7 +48,7 @@
                         </p>
                         <p>
                         <label for="image">
-                        Image: <input type="file"  accept="image/*">
+                        Image: <input type="file"  accept="image/*" id="image"> 
                         </label>
                         </p>
 
@@ -59,32 +58,8 @@
     </section>
     <section id="section3">
        <div id="myProfiles">
-           <div class="profile">
-            <div class="profile-image">
-                <!--the profile image goes here-->
-                <img src="./assets/Images/DenisDelaki.jpeg" alt="">
-            </div>
-            <p class="profile-name">
-                 <!--profile name-->
-                 Name: Denis Delaki
-            </p>
-            <p class="profile-location">
-                 <!--profile location -->
-                 location: Kitengela
-            </p>
-            <p class="contacts">
-                <!--mechanic contacts-->
-                Contacts: 0703361342
-            </p>
-            <p>
-                <!--mechanic reviews -->
-                Reviews: Affordable
-            </p>
-            <div class="review-contact">
-            <input type="text" > 
-            <button>Add Reviews</button>          
-            </div>
-           </div>
+           
+      </div>
        </div>
     </section>
     <section id="section4">
@@ -92,9 +67,9 @@
       <h1>Welcome to <span class="span">My👨‍🔧 </span>Mechanic <br> we make travelling life insured</h1>
       <form action="" method="post"  id="login-form">
            <p>Enter your Email address</p>
-          <input type="email" placeholder="Enter Your Email Address" required>
+          <input type="email" placeholder="Enter Your Email Address" id="email" required>
           <p>Enter your Password</p>
-          <input type="password" name="password" placeholder="Enter Your Password" required><br><br>
+          <input type="password" name="password" placeholder="Enter Your Password" id="password" required><br><br>
           <button>Login</button>
           <p>Don't have an account yet? <a href="">Sign Up</a></p>
       </form>
@@ -104,11 +79,11 @@
         <div id="contact">
              <h1>Dear customer <span class="span">My👨‍🔧 </span>Mechanic <br> values your feedback</h1>
        <form action="" id="contact-form">
-        <p>Name: <input type="text" placeholder="Enter your name"></p>
-        <p>Email <input type="email" name="email"></p>
+        <p>Name: <input type="text" placeholder="Enter your name" id="contactName"></p>
+        <p>Email <input type="email" name="email" id="contactEmail"></p>
         <p>Message:</p>
-        <textarea name="contact" cols="35" rows="6"></textarea><br>
-        <button>MessageUs</button>
+        <textarea name="contact" cols="35" rows="6" id="contactTextArea"></textarea><br>
+        <button id="messageUs">MessageUs</button>
        </form>
        </div>
     </section>
