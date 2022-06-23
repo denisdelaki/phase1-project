@@ -24,8 +24,14 @@ function renderMechanicData(mechanic) {
     let imageDiv = document.createElement('div')
     imageDiv.className = "profile-image";
     let profileImage = document.createElement('img')
-    profileImage.src = mechanic.image
+    profileImage.src = mechanic.image;
+    let myDiv = document.createElement('div')
+    paragraphName = document.createElement('p')
+    paragraphName.className = "profile-name";
+    paragraphName.textContent=`Name: ${mechanic.name}`
     //append the children to the parent elements
+    myDiv.appendChild(paragraphName)
+    newDiv.appendChild(myDiv)
     imageDiv.appendChild(profileImage)
     newDiv.appendChild(imageDiv)
     profiles.appendChild(newDiv)
