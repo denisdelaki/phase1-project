@@ -26,14 +26,23 @@ function renderMechanicData(mechanic) {
     let profileImage = document.createElement('img')
     profileImage.src = mechanic.image;
     let myDiv = document.createElement('div')
-    paragraphName = document.createElement('p')
+    //create the profile name element 
+    let paragraphName = document.createElement('p')
     paragraphName.className = "profile-name";
-    paragraphName.textContent=`Name: ${mechanic.name}`
+    paragraphName.textContent = `Name: ${mechanic.name}`
+    //create the  mechanic location's
+    let paragraphLocation = document.createElement('p')
+    paragraphLocation.className = "profile-location";
+    paragraphLocation.textContent = `location: ${mechanic.location}`
+    //create the mechanic's contacts element
+   
     //append the children to the parent elements
-    myDiv.appendChild(paragraphName)
+    imageDiv.appendChild(profileImage);
+    newDiv.appendChild(imageDiv);
+    myDiv.appendChild(paragraphName);
+    myDiv.appendChild(paragraphLocation);
+    myDiv.appendChild(paragraphContact)
     newDiv.appendChild(myDiv)
-    imageDiv.appendChild(profileImage)
-    newDiv.appendChild(imageDiv)
     profiles.appendChild(newDiv)
 }
  //fetch the data from the server
