@@ -17,9 +17,17 @@ const contactEmail = document.getElementById('contactEmail')
 const message = document.getElementById('contactTextArea')
 const messageButton=document.getElementById('messageUs')
  // render the profile to the profile section  
-function renderMechanicData() {
+function renderMechanicData(mechanic) {
     let newDiv = document.createElement('div')
     newDiv.className = 'profile'
+    //create the profile image for the mechanics
+    let imageDiv = document.createElement('div')
+    imageDiv.className = "profile-image";
+    let profileImage = document.createElement('img')
+    profileImage.src = mechanic.image
+    //append the children to the parent elements
+    imageDiv.appendChild(profileImage)
+    newDiv.appendChild(imageDiv)
     profiles.appendChild(newDiv)
 }
  //fetch the data from the server
