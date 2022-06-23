@@ -35,7 +35,11 @@ function renderMechanicData(mechanic) {
     paragraphLocation.className = "profile-location";
     paragraphLocation.textContent = `location: ${mechanic.location}`
     //create the mechanic's contacts element
-   
+    let paragraphContact = document.createElement("p");
+    paragraphContact.className = "contacts";
+    paragraphContact.textContent = `Contacts: ${mechanic.contacts}`;
+    //create the review
+    
     //append the children to the parent elements
     imageDiv.appendChild(profileImage);
     newDiv.appendChild(imageDiv);
