@@ -74,6 +74,20 @@ function getMechanicData() {
         })
       );
 }
+//Event listeners
+profileForm.addEventListener('submit', handleSubmit)
+//event handlers
+function handleSubmit(e) {
+    e.preventDefault()
+    let myMechanic = {
+        Name: e.target.name.value, 
+        Location: e.target.location.value,
+        Contacts: e.target.contacts.value,
+        Image: e.target.image.value
+    }
+    renderMechanicData(myMechanic)
+    createProfile(myMechanic)
+}
 
  //display the data on  on the DOM
  function displayMechanicData() {
