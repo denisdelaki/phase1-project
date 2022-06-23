@@ -43,15 +43,24 @@ function renderMechanicData(mechanic) {
     reviewDiv.id = "review-mechanic";
     let paragraphReviews = document.createElement("p");
     paragraphReviews.className = "profile-review";
-    paragraphReviews.textContent=`Reviews: ${mechanic.review}`
+    paragraphReviews.textContent = `Reviews: ${mechanic.review}`
+    let reviewInput = document.createElement('input')
+    reviewInput.className="reviewInput"
+    reviewInput.type = 'text'
+    reviewInput.placeholder="Add Reviews here"
+    let addButton = document.createElement('button')
+    addButton.id = "review-button";
+    addButton.textContent='Add'
     //append the children nodes to the parent nodes
     imageDiv.appendChild(profileImage);
     newDiv.appendChild(imageDiv);
     myDiv.appendChild(paragraphName);
     myDiv.appendChild(paragraphLocation);
     myDiv.appendChild(paragraphContact)
-    newDiv.appendChild(myDiv)
-    reviewDiv.appendChild(paragraphReviews)
+    reviewDiv.appendChild(paragraphReviews);
+    reviewDiv.appendChild(reviewInput)
+    reviewDiv.appendChild(addButton)
+    newDiv.appendChild(myDiv);
     newDiv.appendChild(reviewDiv)
     profiles.appendChild(newDiv)
 }
