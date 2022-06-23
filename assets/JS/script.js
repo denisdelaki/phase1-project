@@ -39,14 +39,20 @@ function renderMechanicData(mechanic) {
     paragraphContact.className = "contacts";
     paragraphContact.textContent = `Contacts: ${mechanic.contacts}`;
     //create the review
-    
-    //append the children to the parent elements
+    let reviewDiv = document.createElement('div')
+    reviewDiv.id = "review-mechanic";
+    let paragraphReviews = document.createElement("p");
+    paragraphReviews.className = "profile-review";
+    paragraphReviews.textContent=`Reviews: ${mechanic.review}`
+    //append the children nodes to the parent nodes
     imageDiv.appendChild(profileImage);
     newDiv.appendChild(imageDiv);
     myDiv.appendChild(paragraphName);
     myDiv.appendChild(paragraphLocation);
     myDiv.appendChild(paragraphContact)
     newDiv.appendChild(myDiv)
+    reviewDiv.appendChild(paragraphReviews)
+    newDiv.appendChild(reviewDiv)
     profiles.appendChild(newDiv)
 }
  //fetch the data from the server
