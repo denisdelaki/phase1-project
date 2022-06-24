@@ -10,6 +10,7 @@ const profileImage = document.getElementById('image')
 const profileReviews = document.getElementById('review-contact')
 const addReview=document.getElementById('review-button')
 //section 4
+const register=document.getElementById('register')
 const loginEmail = document.getElementById('email')
 const loginPassword = document.getElementById('password')
 const contactName = document.getElementById('contactName')
@@ -50,6 +51,7 @@ function renderMechanicData(mechanic) {
     reviewInput.placeholder="Add Reviews here"
     let addButton = document.createElement('button')
     addButton.id = "review-button";
+    addButton.onclick='handleClick()'
     addButton.textContent='Add'
     //append the children nodes to the parent nodes
     imageDiv.appendChild(profileImage);
@@ -74,19 +76,69 @@ function getMechanicData() {
         })
       );
 }
+function registerUsers() {
+  fetch('http://localhost:3000/users')
+    .then(res => res.json())
+    .then(users => {
+      renderPageRegistration(users)
+    })
+}
 //Event listeners
-profileForm.addEventListener('submit', handleSubmit)
+profileForm.addEventListener('submit', handleSubmit);
+
 //event handlers
 function handleSubmit(e) {
     e.preventDefault()
     let myMechanic = {
-        Name: e.target.name.value, 
-        Location: e.target.location.value,
-        Contacts: e.target.contacts.value,
-        Image: e.target.image.value
+        name: e.target.name.value, 
+        location: e.target.location.value,
+        contacts: e.target.contacts.value,
+        image: e.target.image.value
     }
     renderMechanicData(myMechanic)
     createProfile(myMechanic)
+}
+function renderPageRegistration() {
+  let registerForm = document.createElement('form')
+  registerForm.id = 'myForm'
+  let formHeader = document.createElement('h1')
+  formHeader.textContent = "Kindly register Here"
+  let nameInput = document.createElement('input')
+  nameInput.placeholder='Enter your User Name'
+  let emailInput = document.createElement("input");
+  emailInput.textContent = `email: `
+  emailInput.type = 'email'
+  emailInput.placeholder='Enter your Email address'
+  let passwordInput = document.createElement("input");
+  passwordInput.type = 'password'
+  passwordInput.placeholder='Enter your password'
+  let registerButton = document.createElement('button')
+  registerButton.type = 'submit'
+  registerButton.id='registerButton'
+  registerButton.innerText = 'REGISTER NOW'
+  let loginparagra = document.createElement('p')
+  loginparagra.className='loginpara'
+  loginparagra.innerText = ` Already have an account? `
+  let link = document.createElement('a')
+  link.href = "#login-card";
+  link.innerText = "click here to login.";
+
+  //append child nodes to the parent nodes 
+  document.getElementById('login-registration').appendChild(register)
+  register.appendChild(registerForm)
+  registerForm.appendChild(formHeader)
+  registerForm.appendChild(nameInput);
+  registerForm.appendChild(emailInput);
+  registerForm.appendChild(passwordInput);
+  registerForm.appendChild(registerButton)
+  loginparagra.appendChild(link)
+  registerForm.appendChild(loginparagra)
+
+
+}
+
+function handleClick() {
+ console.log('hello')
 }
 //post the data when the user create a profile
 function createProfile(myMechanic) {
@@ -97,13 +149,14 @@ function createProfile(myMechanic) {
     },
     body: JSON.stringify(myMechanic)
   })
-    .then(res => res.json())
+  .then(res => res.json())
   .then(myMechanic=>console.log(myMechanic))
   
 }
 
  //display the data on  on the DOM
  function displayMechanicData() {
-     getMechanicData()
+   getMechanicData()
+   renderPageRegistration();
  }
 displayMechanicData()

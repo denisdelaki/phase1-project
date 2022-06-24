@@ -1,36 +1,50 @@
 {
-    "mechanics":[
-      {
-        "id": 1,
-        "name": "Denis Delaki",
-        "location": "Kitengela",
-        "contacts": "0703361342",
-        "image": "./assets/Images/DenisDelaki.jpeg",
-        "review": "Affordable"
-      },
-      {
-        "id": 2,
-        "name": "Alfred Kikwai",
-        "location": "Kisumu",
-        "contacts": "0720241209",
-        "image": "./assets/Images/alfred.jpg",
-        "review": ""
-      },
-      {
-        "id": 3,
-        "name": "Cynthy Delhia",
-        "location": "Nakuru",
-        "contacts": "0703103852",
-        "image": "./assets/Images/Delhia.jpg",
-        "review": ""
-      },
-      {
-        "id": 4,
-        "name": "Philip Kimasinya",
-        "location": "Mombasa",
-        "contacts": "0702275255",
-        "image": "./assets/Images/kimasinya.jpg",
-        "review": ""
-      }
-    ]
+  "mechanics": [
+    {
+      "id": 1,
+      "name": "Denis Delaki",
+      "location": "Kitengela",
+      "contacts": "0703361342",
+      "image": "./assets/Images/DenisDelaki.jpeg",
+      "review": "Affordable"
+    },
+    {
+      "id": 2,
+      "name": "Alfred Kikwai",
+      "location": "Kisumu",
+      "contacts": "0720241209",
+      "image": "./assets/Images/alfred.jpg",
+      "review": ""
+    },
+    {
+      "id": 3,
+      "name": "Cynthy Delhia",
+      "location": "Nakuru",
+      "contacts": "0703103852",
+      "image": "./assets/Images/Delhia.jpg",
+      "review": ""
+    },
+    {
+      "id": 4,
+      "name": "Philip Kimasinya",
+      "location": "Mombasa",
+      "contacts": "0702275255",
+      "image": "./assets/Images/kimasinya.jpg",
+      "review": ""
+    },
+    {
+      "name": "Kipyegon Denis",
+      "location": "Bomet",
+      "contacts": "0715655665",
+      "image": "",
+      "id": 5
+    },
+    {
+      "name": "Kipyegon",
+      "location": "jerusalem",
+      "contacts": "0715655665",
+      "image": "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "id": 6
+    }
+  ]
 }
