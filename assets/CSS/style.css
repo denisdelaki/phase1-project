@@ -27,13 +27,54 @@ body{
 }
 #navigation a{
     text-decoration: none;
-    margin-right: 0.5rem;
+   padding: 0.5rem;
     color: blue;
     position: relative;
     top: 1.5rem;
     font-size: 20px;
     font-weight: bold;
 }
+.homepageH1{
+position: absolute;
+left: 15rem;
+font-size: 30px;
+color: blue;
+}
+#home1{
+    height: 85vh;
+    width: 99%;
+    position: relative;
+    top: 4.5rem;
+    left: 1rem;
+    background-color: white;
+    opacity: 0.7;
+    display: flex;
+    flex: column;
+}
+#home1 div{
+    position: relative;
+    top: 4rem;
+    height: 85%;
+    width: 26%;
+    margin: 0.5rem;
+    background-color: black;
+    color: blue;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.problem1, h1, img, h3{
+    margin: 0.5rem;
+}
+.problem2, h1, img, h3, ol{
+    margin: 0.5rem;
+}
+.problem2 >ol{
+    font-size: 13px;
+}
+.problem3 >ol{
+    font-size: 15px;
+}
+
 #section2{
     height: 100vh;
     
@@ -48,15 +89,35 @@ body{
 #mechanic-form{
     height: 60vh;
     width: 40vw;
-    background-color: white;
     position: relative;
     top: 10rem;
     left: 30%;
     box-shadow: 5px 5px 5px 5px blue;
+    display: flex;
+    flex-direction: row;
    
+}
+.myMechanic{
+   color: white;
+    width: 35%;
+    background-color: black;
+}
+.myMechanic h1>span{
+    color: blue;
+}
+.myMechanic h2>span{
+    color: blue;
+}
+
+.profileForm{
+    background-color: white;
+    width: 65%;
 }
 #mechanic-form h1{
     text-align: center;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+    font-size: 30px;
 }
 #form{
      margin: 2rem;
@@ -67,8 +128,8 @@ body{
     color: white;
     background-color: blue;
     position: absolute;
-    bottom: 8rem;
-    left: 6rem;
+    bottom: 1rem;
+    left: 13rem;
 }
 #submission:hover{
     background-color: white;
@@ -96,6 +157,9 @@ body{
     width: 22%;
     background-color: white;
     margin: 0.5rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 10px 10px;
 }
 .profile-image img{
     height: 20vh;
@@ -111,7 +175,7 @@ body{
 .reviewInput{
     margin-left: 2rem;
     position: relative;
-    top: 0.8rem;
+    bottom: 0.8rem;
    right: 1rem;
 }
 #review-button{
@@ -119,7 +183,7 @@ body{
     background-color: blue;
     cursor: pointer;
     position: relative;
-    top: 0.8rem;
+    bottom: 0.8rem;
 }
 #section4{
     height: 100vh;
@@ -203,4 +267,49 @@ margin-top: 1rem;
 }
 #contact-form{
     margin-left: 1.5rem;
+}
+#messageUs{
+    color: white;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+#footer{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.footer h3 ,h4{
+    position: absolute;
+    
+}
+.social{
+    height: 90%;
+    width: 48%;
+    margin-top: 2.3rem;
+    color: black;
+    position: relative;
+    bottom: 1rem;
+  
+}
+.themechanic{
+   height: 90%;
+   margin: 1rem;
+    width: 48%;
+    padding-top: 0.3rem;
+    margin-top: 2.3rem;
+    color: black;
+    position: relative;
+    bottom: 2rem;
+    
+
+
 }

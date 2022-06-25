@@ -31,6 +31,20 @@
       "contacts": "0702275255",
       "image": "./assets/Images/kimasinya.jpg",
       "review": ""
+    },
+    {
+      "name": "Kipyegon Denis",
+      "location": "jerusalem",
+      "contacts": "0715655665",
+      "image": "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "id": 5
+    },
+    {
+      "name": "philipu",
+      "location": "kibra",
+      "contacts": "0715655665",
+      "image": "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "id": 6
     }
   ],
   "RegisteredUsers": [
@@ -48,11 +62,7 @@
     }
   ],
   "messages": [
-    {
-      "Name": "Kipyegon Denis",
-      "Email": "cherutoi@gmail.com",
-      "Message": "happy",
-      "id": 1
-    }
+   
+    
   ]
 }

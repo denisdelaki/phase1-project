@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyMechanics</title>
     <link rel="stylesheet" href="./assets/CSS/style.css">
+    <script
+      src="https://kit.fontawesome.com/4ca77255f7.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <section id="section1">
@@ -24,7 +28,10 @@
             </div>
     </div>
     <div id="home-page">
-       <div id="home1">
+        <div id="home1">
+            
+        <h1 class="homepageH1">Common Car Complications One Is Most Likely To Encounter</h1>
+        
          <div class="problem1">
             <h1> Vehicle Punctures</h1>
              <img src="./assets/Images/car punctures.jpg" alt="Car punctures" height="180px">
@@ -68,43 +75,46 @@
                  <li>Clutch Noise: Caused by worn and misaligned bearings, stop pins, and loose flywheel bolts</li>
              </ol>
          </div>
-         
-         
-          <!-- <p>Punctures</p>
-          <p>braking system failures</p>
-          <p>Engine failures</p>
-          <p>Ignition complications</p>
-          <p>clutch complications</p> -->
        </div>
     </div>
     </section>
     <section id="section2">
         <div id="mechanic-form">
+            <div class="myMechanic">
+                <h1> <span>T</span>RAVEL</h1>
+                <h1><span>W</span>ITH</h1>
+                <h1><span>U</span>S</h1>
+                <h1>FO<span>R</span></h1>
+                <h1>GREAT<span>E</span>R</h1>
+                <h2>EXPERIENC<span>E</span></h2>
+                <h1 class="mech">👨‍🔧</h1>
+            </div>
+            <div class="profileForm">
              <h1><span class="span">My👨‍🔧 </span>Mechanic</h1>
             <form id="form" action="" method="get">
                     <p>
-                        <label for="name">
-                            Name:<input type="text" id="name">
-                        </label>
+                        <label for="name">Name:</label> <br>
+                            <input type="text" id="name">
                         </p>
                         <p>
-                        <label for="location ">
-                            Location: <input type="text" id="location">
-                        </label> 
+                        <label for="location "> Location:</label> <br>                        
+                            <input type="text" id="location">
                         </p>
                         <p>
                         <label for="contacts">
-                            Contacts: <input type="text" id="contacts">
-                        </label>
+                        Contacts: </label> <br>
+                        <input type="text" id="contacts">
+                        
                         </p>
                         <p>
                         <label for="image">
-                        Image: <input type="text" id="image"> 
-                        </label>
+                        Image: </label> <br>
+                        <input type="text" id="image"> 
                         </p>
 
                         <button id="submission" type="submit">CREATE 👨‍🔧PROFILE</button>
             </form>
+            </div>
         </div>
     </section>
     <section id="section3">
@@ -122,7 +132,7 @@
           <input type="email" name="email" placeholder="Enter Your Email Address" id="email" required>
           <p>Enter your Password</p>
           <input type="password" name="password" placeholder="Enter Your Password" id="password" required><br><br>
-          <button>Login</button>
+          <button type="submit" id="loginButton">Login</button>
           <p>Don't have an account yet? <a href="#section4" id="registerMyUser">Sign Up</a></p>
       </form>
      </div>
@@ -137,8 +147,8 @@
             <input type="password" name="password" placeholder="Enter your Password Here" id="formPassword" required> <br>
             <label for="Password">Confirm Password:</label>
             <input type="password" name="password" placeholder="Confirm your Password Here" id="formPassword2" required> <br>
-            <input type="submit" id="registerButton" value="REGISTER NOW>">
-             <p class="loginpara">Already have an account? <a href="#section4" id="registerLink"> click here to login</a></p>
+            <button type="submit" id="registerButton">REGISTER NOW></button>
+            <p class="loginpara">Already have an account? <a href="#section4" id="registerLink"> click here to login</a></p>
             </form>
             </div>
          
@@ -151,12 +161,31 @@
              <h1>Dear customer <span class="span">My👨‍🔧 </span>Mechanic <br> values your feedback</h1>
        <form action="#" id="contact-form">
         <p>Name: <input type="text" name="name" placeholder="Enter your name" id="contactName"></p>
-        <p>Email <input type="email" name="email" id="contactEmail"></p>
+        <p>Email: <input type="email" name="email" id="contactEmail" placeholder="Enter your email"></p>
         <p>Message:</p>
         <textarea name="contact"  cols="35" rows="6" id="contactTextArea"></textarea><br>
         <button id="messageUs">MessageUs</button>
        </form>
        </div>
+       <footer id="footer">
+        <div class="footer">
+            <h3>MAKE YOUR TRAVELLING DREAMS COME THROUGH WITH A TAB OF A <span>BUTTON</span></h3>
+            
+           <div class="social">
+               <h5>F0llow Us At Our Social Media Handles</h5>
+               <i class="fa-brands fa-facebook-f">@MyMechanic</i>
+               <i class="fa-brands fa-twitter"> @myMechanic</i>
+               <i class="fa-brands fa-instagram"> @mymychanic</i>
+
+           </div>
+           <div class="themechanic">
+              <p> HOW CAN WE GET HELP?</p>
+               <p>Our Team that include the management, the mechanics are available 24/7 from monday to Monday at any hour of the day</p>
+               
+           </div>
+         
+        </div>
+       </footer>
     </section>
     <script src="./assets/JS/script.js"></script>
 </body>

@@ -8,7 +8,7 @@ const profileLocation = document.getElementById('location')
 const profileContacts = document.getElementById('contacts')
 const profileImage = document.getElementById('image')
 const profileReviews = document.getElementById('review-contact')
-const addReview=document.getElementById('review-button')
+const addReview=document.querySelectorAll('#review-button')
 //section 4
 const userRegForm = document.getElementById('myForm')
 const registerDiv = document.getElementById("register")
@@ -16,6 +16,7 @@ const loginPage=document.getElementById('login-card')
 const login=document.getElementById('login-form')
 const loginEmail = document.getElementById('email')
 const loginPassword = document.getElementById('password')
+const loginButton=document.getElementById('loginButton')
 const registerButton = document.getElementById('registerButton')
 const contactForm=document.getElementById('contact-form')
 const contactName = document.getElementById('contactName')
@@ -85,6 +86,10 @@ function getMechanicData() {
 
 
 //Event listeners
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  console.log("DOM fully loaded");
+});
 profileForm.addEventListener('submit', handleSubmit);
 userRegForm.addEventListener('submit', userRegistration);
 document.getElementById('registerLink').addEventListener('click', () => {
@@ -93,12 +98,30 @@ document.getElementById('registerLink').addEventListener('click', () => {
 })
 login.addEventListener('submit', userLogin)
 contactForm.addEventListener('submit', handleMessages)
-//event handlers
-function userLogin(e) {
+registerButton.addEventListener('click', handleClicks)
+  function handleClicks(e)
+{
   e.preventDefault()
+  let inputs = document.querySelectorAll('#formName, #formEmail, #formPassword, #formPassword2')
+  inputs.forEach(input => {
+    input.value = '';
+  })
+}
+//event handlers
+function handleReviews() {
+  console.log('clicked')
+  // fetch("http://localhost:3000/mechanics");
+}
+function userLogin(e) {
+  e.preventDefault("http://localhost:3000/mechanics",
+    {
+      method: "",
+      
+  });
   let loggedinUser = {
     email: e.target.email.value,
     password: e.target.password.value,
+
   };
   if (
     loggedinUser.email === "denisdelaki@gmail.com" &&
@@ -113,6 +136,10 @@ function userLogin(e) {
     registerDiv.style.display = "block";
     alert('kindly sign up')
   }
+  let inputs = document.querySelectorAll('#email, #password')
+  inputs.forEach((input) => {
+    input.value = "";
+  });
 }
 
 function userRegistration(e) {
@@ -145,16 +172,18 @@ function handleSubmit(e) {
     renderMechanicData(myMechanic);
     createProfile(myMechanic)
 }
+let myUrl = "http://localhost:3000/RegisteredUsers";
 function registerUser(user) {
-  fetch("http://localhost:3000/RegisteredUsers", {
+  fetch(myUrl, {
     method: "POST",
     headers: {
       "content-Type": "application/json",
     },
+    credentials: 'same-origin',
     body: JSON.stringify(user),
-  }).then(res => res.json())
-  .then(user=>console.log(user))
-   
+  })
+    .then(res => res.json())
+  .then(users=>console.log(users))
 }
 // document.querySelector('#myForm').addEventListener('submit', handleUserRegistration);
 // function handleUserRegistration(e) {
