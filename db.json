@@ -31,20 +31,28 @@
       "contacts": "0702275255",
       "image": "./assets/Images/kimasinya.jpg",
       "review": ""
+    }
+  ],
+  "RegisteredUsers": [
+    {
+      "name": "chordata kering",
+      "email": "denisdelaki@gmail.com",
+      "password1": "denis",
+      "password2": "denis"
     },
     {
-      "name": "Kipyegon Denis",
-      "location": "Bomet",
-      "contacts": "0715655665",
-      "image": "",
-      "id": 5
-    },
+      "name": "ragna lothbrok",
+      "email": "cynthydelhia@gmail.com",
+      "password1": "cynthy@001",
+      "password2": "cynthy@001"
+    }
+  ],
+  "messages": [
     {
-      "name": "Kipyegon",
-      "location": "jerusalem",
-      "contacts": "0715655665",
-      "image": "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "id": 6
+      "Name": "Kipyegon Denis",
+      "Email": "cherutoi@gmail.com",
+      "Message": "happy",
+      "id": 1
     }
   ]
 }

@@ -68,7 +68,7 @@
       <h1>Welcome to <span class="span">My👨‍🔧 </span>Mechanic <br> we make travelling life insured</h1>
       <form action="" method="get"  id="login-form">
            <p>Enter your Email address</p>
-          <input type="email" placeholder="Enter Your Email Address" id="email" required>
+          <input type="email" name="email" placeholder="Enter Your Email Address" id="email" required>
           <p>Enter your Password</p>
           <input type="password" name="password" placeholder="Enter Your Password" id="password" required><br><br>
           <button>Login</button>
@@ -76,34 +76,33 @@
       </form>
      </div>
      <div id="register">
-      <form id="myForm">
-       <h1>Kindly Register Here</h1>
-       <p>
-       <label>name:</label>
-       <input type="text" placeholder="Enter Your Username">
-       </p>
-       <p>
-       <label> email: </label>
-       <input type="email" placeholder="Enter Your Email Address">
-       </p>
-       <p>
-       <label >password:</label>
-       <input type="password" placeholder="Enter your Password">
-       </p> 
-       <button type="submit" id="registerButton">REGISTER NOW</button>
-        <p class="loginpara">Already have an account? <a href="#"> click here to login</a></p>
-      </form>
-     </div>
-     </div>
+        <form action="" id="myForm">
+            <h1>Kindly register here</h1>
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Enter your Name Here" id="formName" required> <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter your Email Here" id="formEmail" required> <br>
+            <label for="password">Password: </label>
+            <input type="password" name="password" placeholder="Enter your Password Here" id="formPassword" required> <br>
+            <label for="Password">Confirm Password:</label>
+            <input type="password" name="password" placeholder="Confirm your Password Here" id="formPassword2" required> <br>
+            <input type="submit" id="registerButton" value="REGISTER NOW>">
+             <p class="loginpara">Already have an account? <a href="#section4" id="registerLink"> click here to login</a></p>
+            </form>
+            </div>
+         
+        
+     
+    
     </section>
     <section id="section5">
         <div id="contact">
              <h1>Dear customer <span class="span">My👨‍🔧 </span>Mechanic <br> values your feedback</h1>
-       <form action="" id="contact-form">
-        <p>Name: <input type="text" placeholder="Enter your name" id="contactName"></p>
+       <form action="#" id="contact-form">
+        <p>Name: <input type="text" name="name" placeholder="Enter your name" id="contactName"></p>
         <p>Email <input type="email" name="email" id="contactEmail"></p>
         <p>Message:</p>
-        <textarea name="contact" cols="35" rows="6" id="contactTextArea"></textarea><br>
+        <textarea name="contact"  cols="35" rows="6" id="contactTextArea"></textarea><br>
         <button id="messageUs">MessageUs</button>
        </form>
        </div>

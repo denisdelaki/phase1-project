@@ -124,10 +124,13 @@ body{
 #section4{
     height: 100vh;
 }
+#login-registration{
+    display: flex;
+    justify-content: space-evenly;
+}
 #login-card{
     height: 50vh;
     width: 30%;
-    margin: auto;
     background-color: white;
     position: relative;
     top: 8rem;
@@ -139,6 +142,8 @@ body{
 #login-card button{
     color: white;
     background-color: blue;
+    border: none;
+    padding: 0.5rem;
 }
 #login-card button:hover{
     cursor: pointer;
@@ -147,6 +152,45 @@ body{
 }
 #login-form{
     margin: 2rem;
+}
+#login-card p{
+    position: relative;
+    bottom: 1rem;
+}
+#register{
+      height: 50vh;
+    width: 30%;
+    background-color: white;
+    position: relative;
+    top: 8rem;
+    box-shadow: 5px 5px blue;
+}
+
+#register input{
+margin-top: 1rem;
+}
+#register, h1, label{
+    margin-left: 0.5rem;
+}
+#registerButton{
+    color: white;
+    background-color: blue;
+    border: none;
+    padding: 0.5rem;
+    align-items: center;
+    position: relative;
+    top: 1rem;
+    left: 2rem;
+    
+}
+#registerButton:hover{
+     cursor: pointer;
+    color: blue;
+    background-color: black
+}
+.loginpara{
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 #contact{
     height: 50vh;
