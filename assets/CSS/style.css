@@ -260,7 +260,13 @@ color: blue;
 margin-top: 1rem;
 }
 #register, h1, label{
-    margin-left: 0.5rem;
+    margin-left: 0.5rem;  
+}
+#register, h1{
+    font-size: 30px;
+}
+#register, label, input{
+    font-size: 25px;
 }
 #registerButton{
     color: white;
@@ -271,6 +277,7 @@ margin-top: 1rem;
     position: relative;
     top: 1rem;
     left: 2rem;
+    font-size: 25px;
     
 }
 #registerButton:hover{
@@ -281,6 +288,7 @@ margin-top: 1rem;
 .loginpara{
     margin-top: 1rem;
     margin-left: 1rem;
+    font-size: 25px;
 }
 #contact{
     height: 50vh;
@@ -291,9 +299,19 @@ margin-top: 1rem;
     bottom: 4rem;
     box-shadow: 5px 5px blue;
 }
+#contact h1{
+    font-size: 30px;
+}
 #contact-form{
     margin-left: 1.5rem;
-    font-size: 20px;
+    
+}
+#contact-form p{
+    font-size: 25px;
+}
+#contactTextArea{
+    height: 100px;
+    width: 90%;
 }
 #messageUs{
     color: white;
