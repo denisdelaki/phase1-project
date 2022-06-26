@@ -170,6 +170,7 @@ color: blue;
 #myProfiles p{
    margin-left: 2rem;
     color: black;
+    font-size: 20px;
 }
 .profile{
     height: 50vh;
@@ -194,15 +195,17 @@ color: blue;
 .reviewInput{
     margin-left: 2rem;
     position: relative;
-    bottom: 0.8rem;
+    bottom: -2rem;
    right: 1rem;
+   font-size: 20px;
 }
 #review-button{
     color: white;
     background-color: blue;
     cursor: pointer;
     position: relative;
-    bottom: 0.8rem;
+    bottom: -2rem;
+    font-size: 20px;
 }
 #section4{
     height: 100vh;
