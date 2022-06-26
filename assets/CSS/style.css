@@ -90,12 +90,24 @@ color: blue;
     height: 60vh;
     width: 40vw;
     position: relative;
-    top: 10rem;
+    top: 12rem;
     left: 30%;
     box-shadow: 5px 5px 5px 5px blue;
     display: flex;
     flex-direction: row;
    
+}
+#name{
+    font-size: 25px;
+}
+#location{
+    font-size: 25px;
+}
+#contact{
+    font-size: 25px;
+}
+#image{
+    font-size: 25px;
 }
 .myMechanic{
    color: white;
@@ -128,8 +140,7 @@ color: blue;
     color: white;
     background-color: blue;
     position: absolute;
-    bottom: 1rem;
-    left: 13rem;
+    left: 17rem;
 }
 #submission:hover{
     background-color: white;
@@ -274,9 +285,9 @@ margin-top: 1rem;
     background-color: blue;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
     position: relative;
-    bottom: 2rem;
+    
 }
 #footer{
     position: relative;

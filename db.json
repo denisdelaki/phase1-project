@@ -31,6 +31,20 @@
       "contacts": "0702275255",
       "image": "./assets/Images/kimasinya.jpg",
       "review": ""
+    },
+    {
+      "name": "",
+      "location": "",
+      "contacts": "",
+      "image": "",
+      "id": 5
+    },
+    {
+      "name": "",
+      "location": "",
+      "contacts": "",
+      "image": "",
+      "id": 6
     }
   ],
   "RegisteredUsers": [
@@ -48,7 +62,11 @@
     }
   ],
   "messages": [
-   
-    
+    {
+      "Name": "",
+      "Email": "",
+      "Message": "",
+      "id": 1
+    }
   ]
 }
