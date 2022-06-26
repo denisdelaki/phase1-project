@@ -75,6 +75,9 @@ color: blue;
 .problem3 >ol{
     font-size: 20px;
 }
+.problem4, h3,ol{
+    font-size: 20px;
+}
 
 #section2{
     height: 100vh;
@@ -107,7 +110,7 @@ color: blue;
 #location{
     font-size: 25px;
 }
-#contact{
+#contacts{
     font-size: 25px;
 }
 #image{
@@ -144,6 +147,7 @@ color: blue;
     color: white;
     background-color: blue;
     position: absolute;
+    font-size: 25px;
     left: 17rem;
 }
 #submission:hover{
@@ -217,12 +221,14 @@ color: blue;
 }
 #login-card h1{
     margin-left: 2rem;
+    font-size: 30px;
 }
 #login-card button{
     color: white;
     background-color: blue;
     border: none;
     padding: 0.5rem;
+    font-size: 25px;
 }
 #login-card button:hover{
     cursor: pointer;
@@ -232,9 +238,14 @@ color: blue;
 #login-form{
     margin: 2rem;
 }
+#login-form p, input{
+    font-size: 25px;
+}
+
 #login-card p{
     position: relative;
     bottom: 1rem;
+    font-size: 25px;
 }
 #register{
       height: 50vh;
