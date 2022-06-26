@@ -44,7 +44,7 @@ color: blue;
     height: 85vh;
     width: 99%;
     position: relative;
-    top: 4.5rem;
+    top: 8rem;
     left: 1rem;
     background-color: white;
     opacity: 0.7;
@@ -62,17 +62,18 @@ color: blue;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
 }
-.problem1, h1, img, h3{
+.problem1, h1 h3{
     margin: 0.5rem;
+    font-size: 25px;
 }
 .problem2, h1, img, h3, ol{
     margin: 0.5rem;
 }
 .problem2 >ol{
-    font-size: 13px;
+    font-size: 20px;
 }
 .problem3 >ol{
-    font-size: 15px;
+    font-size: 20px;
 }
 
 #section2{
@@ -90,13 +91,16 @@ color: blue;
     height: 60vh;
     width: 40vw;
     position: relative;
-    top: 12rem;
+    top: 18rem;
     left: 30%;
     box-shadow: 5px 5px 5px 5px blue;
     display: flex;
     flex-direction: row;
-   
+ 
 }
+.myMechanic h2{
+     margin-left: 1rem;
+ }  
 #name{
     font-size: 25px;
 }
