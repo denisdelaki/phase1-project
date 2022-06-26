@@ -48,17 +48,34 @@ function renderMechanicData(mechanic) {
     //create the review
     let reviewDiv = document.createElement('div')
     reviewDiv.id = "review-mechanic";
-    let paragraphReviews = document.createElement("p");
-    paragraphReviews.className = "profile-review";
-    paragraphReviews.textContent = `Reviews: ${mechanic.review}`
+    
     let reviewInput = document.createElement('input')
     reviewInput.className="reviewInput"
     reviewInput.type = 'text'
-    reviewInput.placeholder="Add Reviews here"
+  reviewInput.placeholder = "Add Reviews here"
+  let paragraphReviews = document.createElement("p");
+  paragraphReviews.className = "profile-review";
+  
     let addButton = document.createElement('button')
     addButton.id = "review-button";
   addButton.textContent = 'Add'
-   
+  addButton.addEventListener('click', handleClicks)
+  function handleClicks() {
+    paragraphReviews.textContent = `Review: ${reviewInput.value}`;
+      updates(mechanic)
+  }
+  function updates(mechanic) {
+    
+    fetch(" http://localhost:3000/mechanics/", {
+      method: "PATCH",
+      headers: {
+        "content-Type": "application/json",
+      },
+      body: JSON.stringify(mechanic),
+    })
+      .then((res) => res.json())
+      .then((mechanic) => console.log(mechanic));
+  }
     //append the children nodes to the parent nodes
     imageDiv.appendChild(profileImage);
     newDiv.appendChild(imageDiv);
@@ -86,7 +103,6 @@ function getMechanicData() {
 
 
 //Event listeners
-
 document.addEventListener("DOMContentLoaded", (e) => {
   console.log("DOM fully loaded");
 });
