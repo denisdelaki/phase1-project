@@ -66,7 +66,7 @@ function renderMechanicData(mechanic) {
   }
   function updates(mechanic) {
     
-    fetch(" http://localhost:3000/mechanics/", {
+    fetch("https://mymechanics.herokuapp.com/mechanics/", {
       method: "PATCH",
       headers: {
         "content-Type": "application/json",
@@ -91,12 +91,11 @@ function renderMechanicData(mechanic) {
 }
  //fetch the data from the server
 function getMechanicData() {
-    fetch("http://localhost:3000/mechanics")
+    fetch("https://mymechanics.herokuapp.com/mechanics")
       .then((res) => res.json())
       .then((mechanics) =>
         mechanics.forEach((mechanic) => {
           renderMechanicData(mechanic);
-         
         })
       );
 }
@@ -129,11 +128,7 @@ function handleReviews() {
   // fetch("http://localhost:3000/mechanics");
 }
 function userLogin(e) {
-  e.preventDefault("http://localhost:3000/mechanics",
-    {
-      method: "",
-      
-  });
+  
   let loggedinUser = {
     email: e.target.email.value,
     password: e.target.password.value,
@@ -162,7 +157,7 @@ function userRegistration(e) {
   e.preventDefault()
   let user = {
     name: e.target.name.value,
-    email: e.target.name.value,
+    email: e.target.email.value,
     password1: e.target.password.value,
     password2: e.target.password.value
   }
@@ -185,8 +180,10 @@ function handleSubmit(e) {
         contacts: e.target.contacts.value,
         image: e.target.image.value
     }
-    renderMechanicData(myMechanic);
-    createProfile(myMechanic)
+  
+    renderMechanicData(myMechanic)
+  createProfile(myMechanic)
+ 
 }
 let myUrl = "http://localhost:3000/RegisteredUsers";
 function registerUser(user) {
@@ -231,28 +228,28 @@ function registerUser(user) {
 // }
 //post the data when the user create a profile
 function createProfile(myMechanic) {
-  fetch(" http://localhost:3000/mechanics", {
-    method: 'POST',
+  fetch("https://mymechanics.herokuapp.com/mechanics/", {
+    method: "POST",
     headers: {
-      'content-Type':'application/json'
+      "content-Type": "application/json",
     },
-    body: JSON.stringify(myMechanic)
+    body: JSON.stringify(myMechanic),
   })
-  .then(res => res.json())
-  .then(myMechanic=>console.log(myMechanic))
+    .then((res) => res.json())
+    .then((myMechanic) => console.log(myMechanic));
   
 }
 
 function getMessages(feedback) {
-  fetch("http://localhost:3000/messages", {
-    method: 'POST',
+  fetch("https://mymechanics.herokuapp.com/messages", {
+    method: "POST",
     headers: {
-      'content-Type': 'application/json'
+      "content-Type": "application/json",
     },
-    body: JSON.stringify(feedback)
+    body: JSON.stringify(feedback),
   })
-    .then(res => res.json())
-  .then(feedback=>console.log(feedback))
+    .then((res) => res.json())
+    .then((feedback) => console.log(feedback));
 }
  //display the data on  on the DOM
  function displayMechanicData() {

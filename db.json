@@ -31,6 +31,20 @@
       "contacts": "0702275255",
       "image": "./assets/Images/kimasinya.jpg",
       "review": ""
+    },
+    {
+      "name": "Jesus Christ",
+      "location": "jerusalem",
+      "contacts": "0715655665",
+      "image": "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "id": 5
+    },
+    {
+      "name": "mathew mark",
+      "location": "jerusalem",
+      "contacts": "0715655665",
+      "image": "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "id": 6
     }
   ],
   "RegisteredUsers": [
@@ -49,10 +63,22 @@
   ],
   "messages": [
     {
-      "Name": "",
-      "Email": "",
-      "Message": "",
+      "Name": "philipu",
+      "Email": "cherutoi@gmail.com",
+      "Message": "i can't find a mechanic in my area ",
       "id": 1
+    },
+    {
+      "Name": "Kipyegon Denis",
+      "Email": "",
+      "Message": "i cant mechanic ",
+      "id": 2
+    },
+    {
+      "Name": "Kipyegon Denis",
+      "Email": "",
+      "Message": "i cant mechanic ",
+      "id": 3
     }
   ]
 }
